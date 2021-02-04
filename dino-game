@@ -1,0 +1,716 @@
+Microsoft Windows [Version 10.0.19042.746]
+(c) 2020 Microsoft Corporation. All rights reserved.
+
+(base) C:\Users\sthai>pip install muselsl
+Requirement already satisfied: muselsl in c:\users\sthai\anaconda3\lib\site-packages (2.0.2)
+Requirement already satisfied: pylsl in c:\users\sthai\anaconda3\lib\site-packages (from muselsl) (1.14.0)
+Requirement already satisfied: pandas in c:\users\sthai\anaconda3\lib\site-packages (from muselsl) (1.1.3)
+Requirement already satisfied: numpy in c:\users\sthai\anaconda3\lib\site-packages (from muselsl) (1.19.2)
+Requirement already satisfied: pexpect in c:\users\sthai\anaconda3\lib\site-packages (from muselsl) (4.8.0)
+Requirement already satisfied: pygatt in c:\users\sthai\anaconda3\lib\site-packages (from muselsl) (4.0.5)
+Requirement already satisfied: seaborn in c:\users\sthai\anaconda3\lib\site-packages (from muselsl) (0.11.0)
+Requirement already satisfied: bitstring in c:\users\sthai\anaconda3\lib\site-packages (from muselsl) (3.1.7)
+Requirement already satisfied: scikit-learn in c:\users\sthai\anaconda3\lib\site-packages (from muselsl) (0.23.2)
+Requirement already satisfied: python-dateutil>=2.7.3 in c:\users\sthai\anaconda3\lib\site-packages (from pandas->muselsl) (2.8.1)
+Requirement already satisfied: pytz>=2017.2 in c:\users\sthai\anaconda3\lib\site-packages (from pandas->muselsl) (2020.1)
+Requirement already satisfied: ptyprocess>=0.5 in c:\users\sthai\anaconda3\lib\site-packages (from pexpect->muselsl) (0.7.0)
+Requirement already satisfied: enum-compat in c:\users\sthai\anaconda3\lib\site-packages (from pygatt->muselsl) (0.0.3)
+Requirement already satisfied: pyserial in c:\users\sthai\anaconda3\lib\site-packages (from pygatt->muselsl) (3.5)
+Requirement already satisfied: matplotlib>=2.2 in c:\users\sthai\anaconda3\lib\site-packages (from seaborn->muselsl) (3.3.2)
+Requirement already satisfied: scipy>=1.0 in c:\users\sthai\anaconda3\lib\site-packages (from seaborn->muselsl) (1.5.2)
+Requirement already satisfied: threadpoolctl>=2.0.0 in c:\users\sthai\anaconda3\lib\site-packages (from scikit-learn->muselsl) (2.1.0)
+Requirement already satisfied: joblib>=0.11 in c:\users\sthai\anaconda3\lib\site-packages (from scikit-learn->muselsl) (0.17.0)
+Requirement already satisfied: six>=1.5 in c:\users\sthai\anaconda3\lib\site-packages (from python-dateutil>=2.7.3->pandas->muselsl) (1.15.0)
+Requirement already satisfied: cycler>=0.10 in c:\users\sthai\anaconda3\lib\site-packages (from matplotlib>=2.2->seaborn->muselsl) (0.10.0)
+Requirement already satisfied: pillow>=6.2.0 in c:\users\sthai\anaconda3\lib\site-packages (from matplotlib>=2.2->seaborn->muselsl) (8.0.1)
+Requirement already satisfied: kiwisolver>=1.0.1 in c:\users\sthai\anaconda3\lib\site-packages (from matplotlib>=2.2->seaborn->muselsl) (1.3.0)
+Requirement already satisfied: pyparsing!=2.0.4,!=2.1.2,!=2.1.6,>=2.0.3 in c:\users\sthai\anaconda3\lib\site-packages (from matplotlib>=2.2->seaborn->muselsl) (2.4.7)
+Requirement already satisfied: certifi>=2020.06.20 in c:\users\sthai\anaconda3\lib\site-packages (from matplotlib>=2.2->seaborn->muselsl) (2020.6.20)
+
+(base) C:\Users\sthai>$ muselsl list
+'$' is not recognized as an internal or external command,
+operable program or batch file.
+
+(base) C:\Users\sthai>muselsl list
+Starting BlueMuse, see BlueMuse window for interactive list of devices.
+
+(base) C:\Users\sthai>muselsl stream
+Starting BlueMuse, see BlueMuse window for interactive list of devices.
+
+(base) C:\Users\sthai>conda create -n "eeg-notebooks" python=3.7 git pip
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: C:\Users\sthai\anaconda3\envs\eeg-notebooks
+
+  added / updated specs:
+    - git
+    - pip
+    - python=3.7
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    ca-certificates-2021.1.19  |       haa95532_0         122 KB
+    certifi-2020.12.5          |   py37haa95532_0         141 KB
+    git-2.23.0                 |       h6bb4b03_0        10.5 MB
+    openssl-1.1.1i             |       h2bbff1b_0         4.8 MB
+    pip-20.3.3                 |   py37haa95532_0         1.8 MB
+    python-3.7.9               |       h60c2a47_0        14.4 MB
+    setuptools-52.0.0          |   py37haa95532_0         711 KB
+    vc-14.2                    |       h21ff451_1           8 KB
+    vs2015_runtime-14.27.29016 |       h5e58377_2        1007 KB
+    wheel-0.36.2               |     pyhd3eb1b0_0          33 KB
+    wincertstore-0.2           |           py37_0          14 KB
+    ------------------------------------------------------------
+                                           Total:        33.5 MB
+
+The following NEW packages will be INSTALLED:
+
+  ca-certificates    pkgs/main/win-64::ca-certificates-2021.1.19-haa95532_0
+  certifi            pkgs/main/win-64::certifi-2020.12.5-py37haa95532_0
+  git                pkgs/main/win-64::git-2.23.0-h6bb4b03_0
+  openssl            pkgs/main/win-64::openssl-1.1.1i-h2bbff1b_0
+  pip                pkgs/main/win-64::pip-20.3.3-py37haa95532_0
+  python             pkgs/main/win-64::python-3.7.9-h60c2a47_0
+  setuptools         pkgs/main/win-64::setuptools-52.0.0-py37haa95532_0
+  sqlite             pkgs/main/win-64::sqlite-3.33.0-h2a8f88b_0
+  vc                 pkgs/main/win-64::vc-14.2-h21ff451_1
+  vs2015_runtime     pkgs/main/win-64::vs2015_runtime-14.27.29016-h5e58377_2
+  wheel              pkgs/main/noarch::wheel-0.36.2-pyhd3eb1b0_0
+  wincertstore       pkgs/main/win-64::wincertstore-0.2-py37_0
+  zlib               pkgs/main/win-64::zlib-1.2.11-h62dcd97_4
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages
+git-2.23.0           | 10.5 MB   | ############################################################################ | 100%
+vc-14.2              | 8 KB      | ############################################################################ | 100%
+python-3.7.9         | 14.4 MB   | ############################################################################ | 100%
+wheel-0.36.2         | 33 KB     | ############################################################################ | 100%
+certifi-2020.12.5    | 141 KB    | ############################################################################ | 100%
+wincertstore-0.2     | 14 KB     | ############################################################################ | 100%
+ca-certificates-2021 | 122 KB    | ############################################################################ | 100%
+openssl-1.1.1i       | 4.8 MB    | ############################################################################ | 100%
+pip-20.3.3           | 1.8 MB    | ############################################################################ | 100%
+setuptools-52.0.0    | 711 KB    | ############################################################################ | 100%
+vs2015_runtime-14.27 | 1007 KB   | ############################################################################ | 100%
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+#
+# To activate this environment, use
+#
+#     $ conda activate eeg-notebooks
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+
+(base) C:\Users\sthai>https://sites.google.com/a/interaxon.ca/muse-developer-site/museio
+'https:' is not recognized as an internal or external command,
+operable program or batch file.
+
+(base) C:\Users\sthai>conda activate "eeg-notebooks"
+
+(eeg-notebooks) C:\Users\sthai>git cline https://github.com/NeuroTechX/eeg-notebooks
+git: 'cline' is not a git command. See 'git --help'.
+
+(eeg-notebooks) C:\Users\sthai>git clone https://github.com/NeuroTechX/eeg-notebooks
+fatal: destination path 'eeg-notebooks' already exists and is not an empty directory.
+
+(eeg-notebooks) C:\Users\sthai>cd eeg-notebooks
+
+(eeg-notebooks) C:\Users\sthai\eeg-notebooks>pip install -e .
+Obtaining file:///C:/Users/sthai/eeg-notebooks
+Collecting brainflow==3.7.2
+  Using cached brainflow-3.7.2-py3-none-any.whl (17.6 MB)
+Collecting gdown==3.12.2
+  Using cached gdown-3.12.2-py3-none-any.whl
+Collecting jupyter==1.0.0
+  Using cached jupyter-1.0.0-py2.py3-none-any.whl (2.7 kB)
+Collecting matplotlib==3.3.1
+  Using cached matplotlib-3.3.1-1-cp37-cp37m-win_amd64.whl (8.9 MB)
+Requirement already satisfied: certifi>=2020.06.20 in c:\users\sthai\anaconda3\envs\eeg-notebooks\lib\site-packages (from matplotlib==3.3.1->eeg-notebooks==0.2) (2020.12.5)
+Collecting muselsl==2.0.2
+  Using cached muselsl-2.0.2-py2.py3-none-any.whl
+Collecting numpy==1.19.1
+  Using cached numpy-1.19.1-cp37-cp37m-win_amd64.whl (12.9 MB)
+Collecting numpydoc==1.1.0
+  Using cached numpydoc-1.1.0-py3-none-any.whl (47 kB)
+Collecting pandas==1.1.1
+  Using cached pandas-1.1.1-cp37-cp37m-win_amd64.whl (9.4 MB)
+Collecting psychopy==2020.2.3
+  Using cached PsychoPy-2020.2.3-py2.py3-none-any.whl
+Collecting pyriemann==0.2.6
+  Using cached pyriemann-0.2.6-py2.py3-none-any.whl (41 kB)
+Collecting pyserial==3.5
+  Using cached pyserial-3.5-py2.py3-none-any.whl (90 kB)
+Collecting pysocks==1.7.1
+  Using cached PySocks-1.7.1-py3-none-any.whl (16 kB)
+Collecting pywinhook==1.6.0
+  Using cached pyWinhook-1.6.0-cp37-cp37m-win_amd64.whl (28 kB)
+Collecting recommonmark==0.6.0
+  Using cached recommonmark-0.6.0-py2.py3-none-any.whl (10 kB)
+Collecting rst2pdf==0.98
+  Using cached rst2pdf-0.98-py3-none-any.whl (170 kB)
+Collecting scikit-learn==0.23.2
+  Using cached scikit_learn-0.23.2-cp37-cp37m-win_amd64.whl (6.8 MB)
+Collecting seaborn==0.9.0
+  Using cached seaborn-0.9.0-py3-none-any.whl (208 kB)
+Collecting sphinx==3.1.1
+  Using cached Sphinx-3.1.1-py3-none-any.whl (2.9 MB)
+Requirement already satisfied: setuptools in c:\users\sthai\anaconda3\envs\eeg-notebooks\lib\site-packages (from sphinx==3.1.1->eeg-notebooks==0.2) (52.0.0.post20210125)
+Collecting sphinx-copybutton==0.3.1
+  Using cached sphinx_copybutton-0.3.1-py3-none-any.whl (10 kB)
+Collecting sphinx-gallery==0.8.1
+  Using cached sphinx_gallery-0.8.1-py3-none-any.whl
+Collecting sphinx_rtd_theme==0.5.0
+  Using cached sphinx_rtd_theme-0.5.0-py2.py3-none-any.whl (10.8 MB)
+Collecting sphinx-tabs==1.3.0
+  Using cached sphinx_tabs-1.3.0-py3-none-any.whl (22 kB)
+Collecting sphinxcontrib-httpdomain==1.7.0
+  Using cached sphinxcontrib_httpdomain-1.7.0-py2.py3-none-any.whl (18 kB)
+Collecting versioneer==0.19
+  Using cached versioneer-0.19-py3-none-any.whl (38 kB)
+Collecting alabaster<0.8,>=0.7
+  Using cached alabaster-0.7.12-py2.py3-none-any.whl (14 kB)
+Collecting babel>=1.3
+  Using cached Babel-2.9.0-py2.py3-none-any.whl (8.8 MB)
+Collecting colorama>=0.3.5
+  Using cached colorama-0.4.4-py2.py3-none-any.whl (16 kB)
+Collecting commonmark>=0.8.1
+  Using cached commonmark-0.9.1-py2.py3-none-any.whl (51 kB)
+Collecting cycler>=0.10
+  Using cached cycler-0.10.0-py2.py3-none-any.whl (6.5 kB)
+Collecting docutils>=0.11
+  Using cached docutils-0.16-py2.py3-none-any.whl (548 kB)
+Collecting h5py>=3.1.0
+  Using cached h5py-3.1.0-cp37-cp37m-win_amd64.whl (2.7 MB)
+Collecting imageio>=2.5
+  Using cached imageio-2.9.0-py3-none-any.whl (3.3 MB)
+Collecting jedi>=0.15.2
+  Using cached jedi-0.18.0-py2.py3-none-any.whl (1.4 MB)
+Collecting Jinja2>=2.3
+  Using cached Jinja2-2.11.3-py2.py3-none-any.whl (125 kB)
+Collecting joblib
+  Using cached joblib-1.0.0-py3-none-any.whl (302 kB)
+Collecting kiwisolver>=1.0.1
+  Using cached kiwisolver-1.3.1-cp37-cp37m-win_amd64.whl (51 kB)
+Collecting MarkupSafe>=0.23
+  Using cached MarkupSafe-1.1.1-cp37-cp37m-win_amd64.whl (16 kB)
+Collecting mne>=0.20.8
+  Using cached mne-0.22.0-py3-none-any.whl (6.9 MB)
+Collecting mypy>=0.790
+  Using cached mypy-0.800-cp37-cp37m-win_amd64.whl (7.8 MB)
+Collecting mypy-extensions<0.5.0,>=0.4.3
+  Using cached mypy_extensions-0.4.3-py2.py3-none-any.whl (4.5 kB)
+Collecting parso<0.9.0,>=0.8.0
+  Using cached parso-0.8.1-py2.py3-none-any.whl (93 kB)
+Collecting pillow>=6.2.0
+  Using cached Pillow-8.1.0-cp37-cp37m-win_amd64.whl (2.2 MB)
+Collecting pyglet>=1.3
+  Using cached pyglet-1.5.14-py3-none-any.whl (1.1 MB)
+Collecting pygments
+  Using cached Pygments-2.7.4-py3-none-any.whl (950 kB)
+Collecting pyparsing!=2.0.4,!=2.1.2,!=2.1.6,>=2.0.3
+  Using cached pyparsing-2.4.7-py2.py3-none-any.whl (67 kB)
+Collecting pyqmix>=2018.12.13
+  Using cached pyqmix-2019.1-py2.py3-none-any.whl (39 kB)
+Collecting python-dateutil>=2.1
+  Using cached python_dateutil-2.8.1-py2.py3-none-any.whl (227 kB)
+Collecting pytz>=2017.2
+  Using cached pytz-2021.1-py2.py3-none-any.whl (510 kB)
+Collecting questplus>=2019.3
+  Using cached questplus-2019.4-py2.py3-none-any.whl
+Collecting requests[socks]
+  Using cached requests-2.25.1-py2.py3-none-any.whl (61 kB)
+Collecting chardet<5,>=3.0.2
+  Using cached chardet-4.0.0-py2.py3-none-any.whl (178 kB)
+Collecting idna<3,>=2.5
+  Using cached idna-2.10-py2.py3-none-any.whl (58 kB)
+Collecting scipy
+  Using cached scipy-1.6.0-cp37-cp37m-win_amd64.whl (32.5 MB)
+Collecting six
+  Using cached six-1.15.0-py2.py3-none-any.whl (10 kB)
+Collecting snowballstemmer>=1.1
+  Using cached snowballstemmer-2.1.0-py2.py3-none-any.whl (93 kB)
+Collecting threadpoolctl>=2.0.0
+  Using cached threadpoolctl-2.1.0-py3-none-any.whl (12 kB)
+Collecting typed-ast<1.5.0,>=1.4.0
+  Using cached typed_ast-1.4.2-cp37-cp37m-win_amd64.whl (155 kB)
+Collecting typing-extensions>=3.7.4
+  Using cached typing_extensions-3.7.4.3-py3-none-any.whl (22 kB)
+Collecting urllib3<1.27,>=1.21.1
+  Using cached urllib3-1.26.3-py2.py3-none-any.whl (137 kB)
+Collecting wxPython!=4.0.2,!=4.0.3
+  Using cached wxPython-4.1.1-cp37-cp37m-win_amd64.whl (18.2 MB)
+Collecting appdirs
+  Using cached appdirs-1.4.4-py2.py3-none-any.whl (9.6 kB)
+Collecting arabic-reshaper
+  Using cached arabic_reshaper-2.1.1-py3-none-any.whl
+Collecting astunparse
+  Using cached astunparse-1.6.3-py2.py3-none-any.whl (12 kB)
+Requirement already satisfied: wheel<1.0,>=0.23.0 in c:\users\sthai\anaconda3\envs\eeg-notebooks\lib\site-packages (from astunparse->psychopy==2020.2.3->eeg-notebooks==0.2) (0.36.2)
+Collecting bitstring
+  Using cached bitstring-3.1.7-py3-none-any.whl
+Collecting cached-property
+  Using cached cached_property-1.5.2-py2.py3-none-any.whl (7.6 kB)
+Collecting cffi
+  Using cached cffi-1.14.4-cp37-cp37m-win_amd64.whl (178 kB)
+Collecting esprima
+  Using cached esprima-4.0.1-py3-none-any.whl
+Collecting filelock
+  Using cached filelock-3.0.12-py3-none-any.whl (7.6 kB)
+Collecting freetype-py
+  Using cached freetype_py-2.2.0-py3-none-win_amd64.whl (708 kB)
+Collecting future
+  Using cached future-0.18.2-py3-none-any.whl
+Collecting gevent
+  Using cached gevent-21.1.2-cp37-cp37m-win_amd64.whl (1.5 MB)
+Collecting greenlet<2.0,>=0.4.17
+  Using cached greenlet-1.0.0-cp37-cp37m-win_amd64.whl (95 kB)
+Collecting gitpython
+  Using cached GitPython-3.1.12-py3-none-any.whl (159 kB)
+Collecting gitdb<5,>=4.0.1
+  Using cached gitdb-4.0.5-py3-none-any.whl (63 kB)
+Collecting smmap<4,>=3.0.1
+  Using cached smmap-3.0.5-py2.py3-none-any.whl (25 kB)
+Collecting glfw
+  Using cached glfw-2.0.0-py2.py27.py3.py30.py31.py32.py33.py34.py35.py36.py37.py38-none-win_amd64.whl (491 kB)
+Collecting imageio-ffmpeg
+  Using cached imageio_ffmpeg-0.4.3-py3-none-win_amd64.whl (22.6 MB)
+Collecting imagesize
+  Using cached imagesize-1.2.0-py2.py3-none-any.whl (4.8 kB)
+Collecting importlib-metadata
+  Using cached importlib_metadata-3.4.0-py3-none-any.whl (10 kB)
+Collecting zipp>=0.5
+  Using cached zipp-3.4.0-py3-none-any.whl (5.2 kB)
+Collecting ipykernel
+  Using cached ipykernel-5.4.3-py3-none-any.whl (120 kB)
+Collecting ipython>=5.0.0
+  Using cached ipython-7.20.0-py3-none-any.whl (784 kB)
+Collecting prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0
+  Using cached prompt_toolkit-3.0.14-py3-none-any.whl (359 kB)
+Collecting tornado>=4.2
+  Using cached tornado-6.1-cp37-cp37m-win_amd64.whl (422 kB)
+Collecting traitlets>=4.1.0
+  Using cached traitlets-5.0.5-py3-none-any.whl (100 kB)
+Collecting backcall
+  Using cached backcall-0.2.0-py2.py3-none-any.whl (11 kB)
+Collecting decorator
+  Using cached decorator-4.4.2-py2.py3-none-any.whl (9.2 kB)
+Collecting ipython-genutils
+  Using cached ipython_genutils-0.2.0-py2.py3-none-any.whl (26 kB)
+Collecting ipywidgets
+  Using cached ipywidgets-7.6.3-py2.py3-none-any.whl (121 kB)
+Collecting jupyterlab-widgets>=1.0.0
+  Using cached jupyterlab_widgets-1.0.0-py3-none-any.whl (243 kB)
+Collecting nbformat>=4.2.0
+  Using cached nbformat-5.1.2-py3-none-any.whl (113 kB)
+Collecting jsonschema!=2.5.0,>=2.4
+  Using cached jsonschema-3.2.0-py2.py3-none-any.whl (56 kB)
+Collecting attrs>=17.4.0
+  Using cached attrs-20.3.0-py2.py3-none-any.whl (49 kB)
+Collecting pyrsistent>=0.14.0
+  Using cached pyrsistent-0.17.3-cp37-cp37m-win_amd64.whl
+Collecting widgetsnbextension~=3.5.0
+  Using cached widgetsnbextension-3.5.1-py2.py3-none-any.whl (2.2 MB)
+Collecting notebook
+  Using cached notebook-6.2.0-py3-none-any.whl (9.5 MB)
+Collecting jupyter-client
+  Using cached jupyter_client-6.1.11-py3-none-any.whl (108 kB)
+Collecting jupyter-core
+  Using cached jupyter_core-4.7.1-py3-none-any.whl (82 kB)
+Collecting pywin32>=1.0
+  Using cached pywin32-300-cp37-cp37m-win_amd64.whl (9.2 MB)
+Collecting pyzmq
+  Using cached pyzmq-22.0.2-cp37-cp37m-win_amd64.whl (1.2 MB)
+Collecting Send2Trash>=1.5.0
+  Using cached Send2Trash-1.5.0-py3-none-any.whl (12 kB)
+Collecting terminado>=0.8.3
+  Using cached terminado-0.9.2-py3-none-any.whl (14 kB)
+Collecting pywinpty>=0.5
+  Using cached pywinpty-0.5.7-cp37-cp37m-win_amd64.whl (1.3 MB)
+Collecting argon2-cffi
+  Using cached argon2_cffi-20.1.0-cp37-cp37m-win_amd64.whl (42 kB)
+Collecting javascripthon
+  Using cached javascripthon-0.11-py3-none-any.whl
+Collecting macropy3==1.1.0b2
+  Using cached macropy3-1.1.0b2-py3-none-any.whl
+Collecting dukpy
+  Using cached dukpy-0.2.3-cp37-cp37m-win_amd64.whl (1.3 MB)
+Collecting json-tricks
+  Using cached json_tricks-3.15.5-py2.py3-none-any.whl (26 kB)
+Collecting jupyter-console
+  Using cached jupyter_console-6.2.0-py3-none-any.whl (22 kB)
+Collecting moviepy
+  Using cached moviepy-1.0.3-py3-none-any.whl
+Collecting proglog<=1.0.0
+  Using cached proglog-0.1.9-py3-none-any.whl
+Collecting tqdm
+  Using cached tqdm-4.56.0-py2.py3-none-any.whl (72 kB)
+Collecting msgpack
+  Using cached msgpack-1.0.2-cp37-cp37m-win_amd64.whl (68 kB)
+Collecting msgpack-numpy
+  Using cached msgpack_numpy-0.4.7.1-py2.py3-none-any.whl (6.7 kB)
+Collecting nbconvert
+  Using cached nbconvert-6.0.7-py3-none-any.whl (552 kB)
+Collecting entrypoints>=0.2.2
+  Using cached entrypoints-0.3-py2.py3-none-any.whl (11 kB)
+Collecting mistune<2,>=0.8.1
+  Using cached mistune-0.8.4-py2.py3-none-any.whl (16 kB)
+Collecting nbclient<0.6.0,>=0.5.0
+  Using cached nbclient-0.5.1-py3-none-any.whl (65 kB)
+Collecting pandocfilters>=1.4.1
+  Using cached pandocfilters-1.4.3-py3-none-any.whl
+Collecting async-generator
+  Using cached async_generator-1.10-py3-none-any.whl (18 kB)
+Collecting bleach
+  Using cached bleach-3.3.0-py2.py3-none-any.whl (283 kB)
+Collecting defusedxml
+  Using cached defusedxml-0.6.0-py2.py3-none-any.whl (23 kB)
+Collecting jupyterlab-pygments
+  Using cached jupyterlab_pygments-0.1.2-py2.py3-none-any.whl (4.6 kB)
+Collecting nest-asyncio
+  Using cached nest_asyncio-1.5.1-py3-none-any.whl (5.0 kB)
+Collecting nptyping
+  Using cached nptyping-1.4.0-py3-none-any.whl (29 kB)
+Collecting typish>=1.7.0
+  Using cached typish-1.9.1-py3-none-any.whl (44 kB)
+Collecting openpyxl
+  Using cached openpyxl-3.0.6-py2.py3-none-any.whl (242 kB)
+Collecting et-xmlfile
+  Using cached et_xmlfile-1.0.1-py3-none-any.whl
+Collecting jdcal
+  Using cached jdcal-1.4.1-py2.py3-none-any.whl (9.5 kB)
+Collecting packaging
+  Using cached packaging-20.9-py2.py3-none-any.whl (40 kB)
+Collecting pexpect
+  Using cached pexpect-4.8.0-py2.py3-none-any.whl (59 kB)
+Collecting ptyprocess>=0.5
+  Using cached ptyprocess-0.7.0-py2.py3-none-any.whl (13 kB)
+Collecting pickleshare
+  Using cached pickleshare-0.7.5-py2.py3-none-any.whl (6.9 kB)
+Collecting prometheus-client
+  Using cached prometheus_client-0.9.0-py2.py3-none-any.whl (53 kB)
+Collecting psutil
+  Using cached psutil-5.8.0-cp37-cp37m-win_amd64.whl (244 kB)
+Collecting pycparser
+  Using cached pycparser-2.20-py2.py3-none-any.whl (112 kB)
+Collecting pygatt
+  Using cached pygatt-4.0.5-py3-none-any.whl
+Collecting enum-compat
+  Using cached enum_compat-0.0.3-py3-none-any.whl (1.3 kB)
+Collecting pylsl
+  Using cached pylsl-1.14.0-py2.py3-none-win_amd64.whl (357 kB)
+Collecting pyopengl
+  Using cached PyOpenGL-3.1.5-py3-none-any.whl (2.4 MB)
+Collecting pyosf
+  Using cached pyosf-1.0.5-py2.py3-none-any.whl (26 kB)
+Collecting pypiwin32
+  Using cached pypiwin32-223-py3-none-any.whl (1.7 kB)
+Collecting python-bidi
+  Using cached python_bidi-0.4.2-py2.py3-none-any.whl (30 kB)
+Collecting python-gitlab
+  Using cached python_gitlab-2.6.0-py3-none-any.whl (100 kB)
+Collecting requests-toolbelt>=0.9.1
+  Using cached requests_toolbelt-0.9.1-py2.py3-none-any.whl (54 kB)
+Collecting pyyaml
+  Using cached PyYAML-5.4.1-cp37-cp37m-win_amd64.whl (210 kB)
+Collecting qtconsole
+  Using cached qtconsole-5.0.2-py3-none-any.whl (119 kB)
+Collecting qtpy
+  Using cached QtPy-1.9.0-py2.py3-none-any.whl (54 kB)
+Collecting reportlab
+  Using cached reportlab-3.5.59-cp37-cp37m-win_amd64.whl (2.3 MB)
+Collecting cryptography>=1.3.4
+  Using cached cryptography-3.3.1-cp36-abi3-win_amd64.whl (1.5 MB)
+Collecting pyOpenSSL>=0.14
+  Using cached pyOpenSSL-20.0.1-py2.py3-none-any.whl (54 kB)
+Collecting ruamel.yaml
+  Using cached ruamel.yaml-0.16.12-py2.py3-none-any.whl (111 kB)
+Collecting ruamel.yaml.clib>=0.1.2
+  Using cached ruamel.yaml.clib-0.2.2-cp37-cp37m-win_amd64.whl (118 kB)
+Collecting smartypants
+  Using cached smartypants-2.0.1-py2.py3-none-any.whl (9.9 kB)
+Collecting sounddevice
+  Using cached sounddevice-0.4.1-py3.cp32.cp33.cp34.cp35.cp36.cp37.cp38.cp39.pp32.pp33.pp34.pp35.pp36.pp37-none-win_amd64.whl (167 kB)
+Collecting soundfile
+  Using cached SoundFile-0.10.3.post1-py2.py3.cp26.cp27.cp32.cp33.cp34.cp35.cp36.pp27.pp32.pp33-none-win_amd64.whl (689 kB)
+Collecting sphinxcontrib-applehelp
+  Using cached sphinxcontrib_applehelp-1.0.2-py2.py3-none-any.whl (121 kB)
+Collecting sphinxcontrib-devhelp
+  Using cached sphinxcontrib_devhelp-1.0.2-py2.py3-none-any.whl (84 kB)
+Collecting sphinxcontrib-htmlhelp
+  Using cached sphinxcontrib_htmlhelp-1.0.3-py2.py3-none-any.whl (96 kB)
+Collecting sphinxcontrib-jsmath
+  Using cached sphinxcontrib_jsmath-1.0.1-py2.py3-none-any.whl (5.1 kB)
+Collecting sphinxcontrib-qthelp
+  Using cached sphinxcontrib_qthelp-1.0.3-py2.py3-none-any.whl (90 kB)
+Collecting sphinxcontrib-serializinghtml
+  Using cached sphinxcontrib_serializinghtml-1.1.4-py2.py3-none-any.whl (89 kB)
+Collecting tables
+  Using cached tables-3.6.1-2-cp37-cp37m-win_amd64.whl (3.1 MB)
+Collecting numexpr>=2.6.2
+  Using cached numexpr-2.7.2-cp37-cp37m-win_amd64.whl (92 kB)
+Collecting testpath
+  Using cached testpath-0.4.4-py2.py3-none-any.whl (163 kB)
+Collecting wcwidth
+  Using cached wcwidth-0.2.5-py2.py3-none-any.whl (30 kB)
+Collecting webencodings
+  Using cached webencodings-0.5.1-py2.py3-none-any.whl (11 kB)
+Collecting websocket-client
+  Using cached websocket_client-0.57.0-py2.py3-none-any.whl (200 kB)
+Collecting xarray
+  Using cached xarray-0.16.2-py3-none-any.whl (736 kB)
+Collecting xlrd
+  Using cached xlrd-2.0.1-py2.py3-none-any.whl (96 kB)
+Collecting zope.event
+  Using cached zope.event-4.5.0-py2.py3-none-any.whl (6.8 kB)
+Collecting zope.interface
+  Using cached zope.interface-5.2.0-cp37-cp37m-win_amd64.whl (196 kB)
+Installing collected packages: zipp, typing-extensions, ipython-genutils, traitlets, six, pywin32, pyrsistent, importlib-metadata, attrs, wcwidth, tornado, pyzmq, python-dateutil, pyparsing, parso, jupyter-core, jsonschema, webencodings, pygments, pycparser, prompt-toolkit, pickleshare, packaging, nest-asyncio, nbformat, MarkupSafe, jupyter-client, jedi, decorator, colorama, backcall, async-generator, testpath, pywinpty, pandocfilters, nbclient, mistune, jupyterlab-pygments, Jinja2, ipython, entrypoints, defusedxml, cffi, bleach, urllib3, terminado, Send2Trash, pytz, prometheus-client, numpy, nbconvert, ipykernel, idna, chardet, argon2-cffi, tqdm, smmap, ruamel.yaml.clib, requests, pillow, pandas, notebook, kiwisolver, cycler, cryptography, zope.interface, zope.event, xarray, widgetsnbextension, typish, threadpoolctl, sphinxcontrib-serializinghtml, sphinxcontrib-qthelp, sphinxcontrib-jsmath, sphinxcontrib-htmlhelp, sphinxcontrib-devhelp, sphinxcontrib-applehelp, snowballstemmer, scipy, ruamel.yaml, requests-toolbelt, qtpy, pysocks, pyserial, pypiwin32, pyOpenSSL, ptyprocess, proglog, numexpr, msgpack, matplotlib, macropy3, jupyterlab-widgets, json-tricks, joblib, jdcal, imagesize, imageio-ffmpeg, imageio, greenlet, gitdb, future, et-xmlfile, enum-compat, dukpy, docutils, babel, appdirs, alabaster, xlrd, wxPython, websocket-client, typed-ast, tables, sphinx, soundfile, sounddevice, smartypants, seaborn, scikit-learn, reportlab, questplus, qtconsole, pyyaml, pywinhook, python-gitlab, python-bidi, pyqmix, pyosf, pyopengl, pylsl, pyglet, pygatt, psutil, pexpect, openpyxl, nptyping, mypy-extensions, msgpack-numpy, moviepy, jupyter-console, javascripthon, ipywidgets, glfw, gitpython, gevent, freetype-py, filelock, esprima, commonmark, cached-property, bitstring, astunparse, arabic-reshaper, versioneer, sphinxcontrib-httpdomain, sphinx-tabs, sphinx-rtd-theme, sphinx-gallery, sphinx-copybutton, rst2pdf, recommonmark, pyriemann, psychopy, numpydoc, mypy, muselsl, mne, jupyter, h5py, gdown, brainflow, eeg-notebooks
+  Running setup.py develop for eeg-notebooks
+Successfully installed Jinja2-2.11.3 MarkupSafe-1.1.1 Send2Trash-1.5.0 alabaster-0.7.12 appdirs-1.4.4 arabic-reshaper-2.1.1 argon2-cffi-20.1.0 astunparse-1.6.3 async-generator-1.10 attrs-20.3.0 babel-2.9.0 backcall-0.2.0 bitstring-3.1.7 bleach-3.3.0 brainflow-3.7.2 cached-property-1.5.2 cffi-1.14.4 chardet-4.0.0 colorama-0.4.4 commonmark-0.9.1 cryptography-3.3.1 cycler-0.10.0 decorator-4.4.2 defusedxml-0.6.0 docutils-0.16 dukpy-0.2.3 eeg-notebooks entrypoints-0.3 enum-compat-0.0.3 esprima-4.0.1 et-xmlfile-1.0.1 filelock-3.0.12 freetype-py-2.2.0 future-0.18.2 gdown-3.12.2 gevent-21.1.2 gitdb-4.0.5 gitpython-3.1.12 glfw-2.0.0 greenlet-1.0.0 h5py-3.1.0 idna-2.10 imageio-2.9.0 imageio-ffmpeg-0.4.3 imagesize-1.2.0 importlib-metadata-3.4.0 ipykernel-5.4.3 ipython-7.20.0 ipython-genutils-0.2.0 ipywidgets-7.6.3 javascripthon-0.11 jdcal-1.4.1 jedi-0.18.0 joblib-1.0.0 json-tricks-3.15.5 jsonschema-3.2.0 jupyter-1.0.0 jupyter-client-6.1.11 jupyter-console-6.2.0 jupyter-core-4.7.1 jupyterlab-pygments-0.1.2 jupyterlab-widgets-1.0.0 kiwisolver-1.3.1 macropy3-1.1.0b2 matplotlib-3.3.1 mistune-0.8.4 mne-0.22.0 moviepy-1.0.3 msgpack-1.0.2 msgpack-numpy-0.4.7.1 muselsl-2.0.2 mypy-0.800 mypy-extensions-0.4.3 nbclient-0.5.1 nbconvert-6.0.7 nbformat-5.1.2 nest-asyncio-1.5.1 notebook-6.2.0 nptyping-1.4.0 numexpr-2.7.2 numpy-1.19.1 numpydoc-1.1.0 openpyxl-3.0.6 packaging-20.9 pandas-1.1.1 pandocfilters-1.4.3 parso-0.8.1 pexpect-4.8.0 pickleshare-0.7.5 pillow-8.1.0 proglog-0.1.9 prometheus-client-0.9.0 prompt-toolkit-3.0.14 psutil-5.8.0 psychopy-2020.2.3 ptyprocess-0.7.0 pyOpenSSL-20.0.1 pycparser-2.20 pygatt-4.0.5 pyglet-1.5.14 pygments-2.7.4 pylsl-1.14.0 pyopengl-3.1.5 pyosf-1.0.5 pyparsing-2.4.7 pypiwin32-223 pyqmix-2019.1 pyriemann-0.2.6 pyrsistent-0.17.3 pyserial-3.5 pysocks-1.7.1 python-bidi-0.4.2 python-dateutil-2.8.1 python-gitlab-2.6.0 pytz-2021.1 pywin32-300 pywinhook-1.6.0 pywinpty-0.5.7 pyyaml-5.4.1 pyzmq-22.0.2 qtconsole-5.0.2 qtpy-1.9.0 questplus-2019.4 recommonmark-0.6.0 reportlab-3.5.59 requests-2.25.1 requests-toolbelt-0.9.1 rst2pdf-0.98 ruamel.yaml-0.16.12 ruamel.yaml.clib-0.2.2 scikit-learn-0.23.2 scipy-1.6.0 seaborn-0.9.0 six-1.15.0 smartypants-2.0.1 smmap-3.0.5 snowballstemmer-2.1.0 sounddevice-0.4.1 soundfile-0.10.3.post1 sphinx-3.1.1 sphinx-copybutton-0.3.1 sphinx-gallery-0.8.1 sphinx-rtd-theme-0.5.0 sphinx-tabs-1.3.0 sphinxcontrib-applehelp-1.0.2 sphinxcontrib-devhelp-1.0.2 sphinxcontrib-htmlhelp-1.0.3 sphinxcontrib-httpdomain-1.7.0 sphinxcontrib-jsmath-1.0.1 sphinxcontrib-qthelp-1.0.3 sphinxcontrib-serializinghtml-1.1.4 tables-3.6.1 terminado-0.9.2 testpath-0.4.4 threadpoolctl-2.1.0 tornado-6.1 tqdm-4.56.0 traitlets-5.0.5 typed-ast-1.4.2 typing-extensions-3.7.4.3 typish-1.9.1 urllib3-1.26.3 versioneer-0.19 wcwidth-0.2.5 webencodings-0.5.1 websocket-client-0.57.0 widgetsnbextension-3.5.1 wxPython-4.1.1 xarray-0.16.2 xlrd-2.0.1 zipp-3.4.0 zope.event-4.5.0 zope.interface-5.2.0
+
+(eeg-notebooks) C:\Users\sthai\eeg-notebooks>a
+'a' is not recognized as an internal or external command,
+operable program or batch file.
+
+(eeg-notebooks) C:\Users\sthai\eeg-notebooks>aqu
+'aqu' is not recognized as an internal or external command,
+operable program or batch file.
+
+(eeg-notebooks) C:\Users\sthai\eeg-notebooks>
+(eeg-notebooks) C:\Users\sthai\eeg-notebooks>import pyautogui
+'import' is not recognized as an internal or external command,
+operable program or batch file.
+
+(eeg-notebooks) C:\Users\sthai\eeg-notebooks>pip install pyautogui
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProtocolError('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))': /simple/pyautogui/
+WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProtocolError('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))': /simple/pyautogui/
+Collecting pyautogui
+  Downloading PyAutoGUI-0.9.52.tar.gz (55 kB)
+     |████████████████████████████████| 55 kB 2.0 MB/s
+Collecting pygetwindow>=0.0.5
+  Downloading PyGetWindow-0.0.9.tar.gz (9.7 kB)
+Collecting pyscreeze>=0.1.21
+  Downloading PyScreeze-0.1.26.tar.gz (23 kB)
+Requirement already satisfied: Pillow>=5.2.0 in c:\users\sthai\anaconda3\envs\eeg-notebooks\lib\site-packages (from pyscreeze>=0.1.21->pyautogui) (8.1.0)
+Collecting PyTweening>=1.0.1
+  Downloading PyTweening-1.0.3.zip (15 kB)
+Collecting mouseinfo
+  Downloading MouseInfo-0.1.3.tar.gz (10 kB)
+Collecting pymsgbox
+  Downloading PyMsgBox-1.0.9.tar.gz (18 kB)
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+    Preparing wheel metadata ... done
+Collecting pyperclip
+  Downloading pyperclip-1.8.1.tar.gz (20 kB)
+Collecting pyrect
+  Downloading PyRect-0.1.4.tar.gz (15 kB)
+Building wheels for collected packages: pyautogui, pygetwindow, pyscreeze, PyTweening, mouseinfo, pymsgbox, pyperclip, pyrect
+  Building wheel for pyautogui (setup.py) ... done
+  Created wheel for pyautogui: filename=PyAutoGUI-0.9.52-py3-none-any.whl size=35193 sha256=47c7a82945822ec2bee8dbedc9f6ee4dc4970121fce4740a60d7c7f8e0285069
+  Stored in directory: c:\users\sthai\appdata\local\pip\cache\wheels\f6\f6\b0\15c9d2d3aff00cece56b54184f638bb6342212e1977482f8aa
+  Building wheel for pygetwindow (setup.py) ... done
+  Created wheel for pygetwindow: filename=PyGetWindow-0.0.9-py3-none-any.whl size=11078 sha256=481c85f405449167a7b2a7a074c99b7c98eadd3bb62d8662bf2df2615ebe2afa
+  Stored in directory: c:\users\sthai\appdata\local\pip\cache\wheels\91\7e\35\62d9062a06cfc46fea39e26860253da36f258b3f3fd96c91c3
+  Building wheel for pyscreeze (setup.py) ... done
+  Created wheel for pyscreeze: filename=PyScreeze-0.1.26-py3-none-any.whl size=11933 sha256=5b88be25d9e3a6267d73ac925ffd393678c31181a8f481ce0dd3aaeb50b233b6
+  Stored in directory: c:\users\sthai\appdata\local\pip\cache\wheels\42\22\f9\345a4a833dfa4c9c903db7a283960598051b2fa2136004ac3d
+  Building wheel for PyTweening (setup.py) ... done
+  Created wheel for PyTweening: filename=PyTweening-1.0.3-py3-none-any.whl size=3815 sha256=13e53dbbca4844954bc2ba7eec0fba945fcbce02d5bd9f56b0664b1e7681af24
+  Stored in directory: c:\users\sthai\appdata\local\pip\cache\wheels\1c\ca\56\5da436934a2b244752a7ebc864407729a098271a531a29493c
+  Building wheel for mouseinfo (setup.py) ... done
+  Created wheel for mouseinfo: filename=MouseInfo-0.1.3-py3-none-any.whl size=10905 sha256=87f7951278315b274e41fa00d9c9eeb042d9ece3d3cc62f7e9f497d1a218f36f
+  Stored in directory: c:\users\sthai\appdata\local\pip\cache\wheels\43\9a\7f\373736bf37b94b358be41fb2f317a0f9940a1dcb7a733e1707
+  Building wheel for pymsgbox (PEP 517) ... done
+  Created wheel for pymsgbox: filename=PyMsgBox-1.0.9-py3-none-any.whl size=7420 sha256=e64602ff19f77016fcd9d42eeaa25ad78e601009be33bc9a9cd715874743051a
+  Stored in directory: c:\users\sthai\appdata\local\pip\cache\wheels\39\eb\0e\1587e06da34adf675ad26a113da25df542991f5095303374ef
+  Building wheel for pyperclip (setup.py) ... done
+  Created wheel for pyperclip: filename=pyperclip-1.8.1-py3-none-any.whl size=11117 sha256=e3d8461ba40c9ccfe412cd42097b13c17398d0e52ba79b22516642fc9b2c310c
+  Stored in directory: c:\users\sthai\appdata\local\pip\cache\wheels\67\3f\92\2fae5a6ebb97a26aea363c444dcfa7c7b479feff12fcac6d0c
+  Building wheel for pyrect (setup.py) ... done
+  Created wheel for pyrect: filename=PyRect-0.1.4-py2.py3-none-any.whl size=9547 sha256=b400a423cbe6ab586511993ac34712f46eefe8066dbe44badac6b2d67bf420aa
+  Stored in directory: c:\users\sthai\appdata\local\pip\cache\wheels\97\5f\8e\6f26a5b00d46679ee2391a3542334274ce8bdaf7c6b0f3504c
+Successfully built pyautogui pygetwindow pyscreeze PyTweening mouseinfo pymsgbox pyperclip pyrect
+Installing collected packages: pyrect, pyperclip, PyTweening, pyscreeze, pymsgbox, pygetwindow, mouseinfo, pyautogui
+Successfully installed PyTweening-1.0.3 mouseinfo-0.1.3 pyautogui-0.9.52 pygetwindow-0.0.9 pymsgbox-1.0.9 pyperclip-1.8.1 pyrect-0.1.4 pyscreeze-0.1.26
+
+(eeg-notebooks) C:\Users\sthai\eeg-notebooks>from time import sleep
+'from' is not recognized as an internal or external command,
+operable program or batch file.
+
+(eeg-notebooks) C:\Users\sthai\eeg-notebooks>python
+Python 3.7.9 (default, Aug 31 2020, 17:10:11) [MSC v.1916 64 bit (AMD64)] :: Anaconda, Inc. on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from time import sleep
+>>> import pyautogui
+>>> from pynput.keyboard import Key, Controller
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ModuleNotFoundError: No module named 'pynput'
+>>> pip install pynput.keyboard
+  File "<stdin>", line 1
+    pip install pynput.keyboard
+              ^
+SyntaxError: invalid syntax
+>>> quit
+Use quit() or Ctrl-Z plus Return to exit
+>>> quit()
+
+(eeg-notebooks) C:\Users\sthai\eeg-notebooks>pip install pynput.keyboard
+ERROR: Could not find a version that satisfies the requirement pynput.keyboard
+ERROR: No matching distribution found for pynput.keyboard
+
+(eeg-notebooks) C:\Users\sthai\eeg-notebooks>pip install pynput
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProtocolError('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))': /simple/pynput/
+WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProtocolError('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))': /simple/pynput/
+Collecting pynput
+  Downloading pynput-1.7.2-py2.py3-none-any.whl (99 kB)
+     |████████████████████████████████| 99 kB 2.2 MB/s
+Requirement already satisfied: six in c:\users\sthai\anaconda3\envs\eeg-notebooks\lib\site-packages (from pynput) (1.15.0)
+Installing collected packages: pynput
+Successfully installed pynput-1.7.2
+
+(eeg-notebooks) C:\Users\sthai\eeg-notebooks>python
+Python 3.7.9 (default, Aug 31 2020, 17:10:11) [MSC v.1916 64 bit (AMD64)] :: Anaconda, Inc. on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from pynput.keyboard import Key, Controller
+>>> from os import system as sys
+>>> from datetime import datetime
+>>> import numpy as np
+>>> import matplotlib.pyplot as plt
+>>> from pylsl import StreamInlet, resolve_byprop
+>>> import utils
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ModuleNotFoundError: No module named 'utils'
+>>> quit()
+
+(eeg-notebooks) C:\Users\sthai\eeg-notebooks>pip install utils
+Collecting utils
+  WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProtocolError('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))': /packages/55/e6/c2d2b2703e7debc8b501caae0e6f7ead148fd0faa3c8131292a599930029/utils-1.0.1-py2.py3-none-any.whl
+  WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProtocolError('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))': /packages/55/e6/c2d2b2703e7debc8b501caae0e6f7ead148fd0faa3c8131292a599930029/utils-1.0.1-py2.py3-none-any.whl
+  Downloading utils-1.0.1-py2.py3-none-any.whl (21 kB)
+Installing collected packages: utils
+Successfully installed utils-1.0.1
+
+(eeg-notebooks) C:\Users\sthai\eeg-notebooks>python
+Python 3.7.9 (default, Aug 31 2020, 17:10:11) [MSC v.1916 64 bit (AMD64)] :: Anaconda, Inc. on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import utils
+>>>
+>>> Class Band:
+  File "<stdin>", line 1
+    Class Band:
+             ^
+SyntaxError: invalid syntax
+>>> class Band:
+...  Delta = 0
+...  Theta = 1
+...  Alpha = 2
+...  Beta = 3
+...
+>>>
+>>> """ Experimental Parameters """
+' Experimental Parameters '
+>>> Buffer_Length = 5
+>>> Epoch_Length = 1
+>>> Overlap_Length = 0.8
+>>> Shift_Length = Epoch_Length - Overlap_Length
+>>>
+>>>
+>>> Index_Channel = [0]
+>>>
+>>> if __name__ == "__main__"
+  File "<stdin>", line 1
+    if __name__ == "__main__"
+                            ^
+SyntaxError: invalid syntax
+>>> if __name__ == "__main__":
+...  """ 1. Connect to EEG stream """
+...  print('Looking for an EEG stream...')
+...  streams = resolve_byprop('type', 'EEG', timeout=2)
+...  if len(streams) == 0:
+...   raise RuntimeError('Can\'t find EEG stream.')
+...  print("Start acquiring data")
+...  inlet = StreamInlet(streams[0], max_chunklen=12)
+...  eeg_time_correction = inlet.time_correction()
+...  info = inlet.info()
+...  description = info.desc()
+...  fs = int(info.nominal_srate())
+...  """ 2. Initialize Buffers """
+...  eeg_buffer = np.zeros((int(fs * Buffer_Length), 1))
+...  filter_state = None
+...  n_win_test = int(np.floor((Buffer_Length - Epoch_Length)/Shift_Length + 1))
+...  band_buffer = np.zeros((n_win_test, 4))
+...  """ 3. Get Data """
+...  keyboard = Controller()
+...  print('Press Ctrl-C in the console to break the while loop.')
+...  try:
+...   t = datetime.now()
+...   while True:
+...    """ 3.1 Acquire Data """
+...    eeg_data, timestamp = inlet.pull_chunk(
+...     timeout=1, max_samples=int(Shift_Length * fs))
+...    ch_data = np.array(eeg_data)[:, Index_Channel]
+...    eeg_buffer, filter_state = utils.update_buffer(
+...     eeg_buffer, ch_data, notch=True,
+...     filter_state=filter_state)
+...    """ 3.2 Compute Band Powers """
+...    data_epoch = utils.get_last_data(eeg_buffer, Epoch_Length * fs)
+...    band_powers = utils.compute_band_powers(data_epoch, fs)
+...    band_buffer, _ = utils.update_buffer(band_buffer, np.asarray([band_powers]))
+...    smooth_band_powers = np.mean(band_buffer, axis=0)
+...    print('Delta: ', band_powers[Band.Delta], ' Theta: ', band_powers[Band,Theta], ' Alpha: ', band_powers[Band.Alpha], ' Beta: ', band_powers[Band,Beta])
+...    """ 3.3 Compute Neurofeedback Metrics """
+...    if band_powers[Band,Delta] > 1 and  band_powers[Band.Theta] > 1 and band_powers[Band.Alpha] > 1:
+...     print(""" blink """)
+...     pyautogui.press('space')
+...
+  File "<stdin>", line 41
+
+    ^
+IndentationError: unexpected unindent
+>>>
+>>> except KeyboardInterrupt:
+  File "<stdin>", line 1
+    except KeyboardInterrupt:
+         ^
+SyntaxError: invalid syntax
+>>> except KeyboardInterrupt :
+  File "<stdin>", line 1
+    except KeyboardInterrupt :
+         ^
+SyntaxError: invalid syntax
+>>> else:
+  File "<stdin>", line 1
+    else:
+       ^
+SyntaxError: invalid syntax
+>>> elif:
+  File "<stdin>", line 1
+    elif:
+       ^
+SyntaxError: invalid syntax
+>>> elif
+  File "<stdin>", line 1
+    elif
+       ^
+SyntaxError: invalid syntax
+>>> if KeyboardInterrupt:
+...  print('Closing')
+...
+Closing
+>>>
