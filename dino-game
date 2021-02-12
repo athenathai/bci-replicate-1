@@ -17,6 +17,7 @@ pip install pyautogui
 from time import sleep
 
 python
+#the rest of the code is from SabeehHassany/museEEG repository on Github
 
 >>> from time import sleep
 >>> import pyautogui
