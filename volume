@@ -8,6 +8,7 @@ mental state for neurofeedback.
 The neurofeedback protocols described here are inspired by
 *Neurofeedback: A Comprehensive Review on System Design, Methodology and Clinical Applications* by Marzbani et. al
 Adapted from https://github.com/NeuroTechX/bci-workshop
+Copied from https://github.com/SabeehHassany/museEEG/blob/master/Volume.py
 """
 import pyautogui
 from time import sleep
